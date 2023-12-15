@@ -1,0 +1,3147 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>doc_panel</class>
+ <widget class="QMainWindow" name="doc_panel">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1165</width>
+    <height>1014</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Document Processing Panel</string>
+  </property>
+  <property name="windowIcon">
+   <iconset>
+    <normaloff>../doc_processing_panel/icons/san_rafael3.png</normaloff>../doc_processing_panel/icons/san_rafael3.png</iconset>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">background-color:qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:0, stop:0 rgba(0, 4, 53, 255), stop:1 rgba(46, 90, 136, 255));</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QVBoxLayout" name="verticalLayout">
+    <property name="spacing">
+     <number>0</number>
+    </property>
+    <property name="leftMargin">
+     <number>0</number>
+    </property>
+    <property name="topMargin">
+     <number>0</number>
+    </property>
+    <property name="rightMargin">
+     <number>0</number>
+    </property>
+    <property name="bottomMargin">
+     <number>0</number>
+    </property>
+    <item>
+     <widget class="QFrame" name="frame">
+      <property name="frameShape">
+       <enum>QFrame::StyledPanel</enum>
+      </property>
+      <property name="frameShadow">
+       <enum>QFrame::Raised</enum>
+      </property>
+      <layout class="QVBoxLayout" name="verticalLayout_2">
+       <property name="spacing">
+        <number>0</number>
+       </property>
+       <property name="leftMargin">
+        <number>0</number>
+       </property>
+       <property name="topMargin">
+        <number>0</number>
+       </property>
+       <property name="rightMargin">
+        <number>0</number>
+       </property>
+       <property name="bottomMargin">
+        <number>0</number>
+       </property>
+       <item>
+        <widget class="QFrame" name="header">
+         <property name="minimumSize">
+          <size>
+           <width>0</width>
+           <height>100</height>
+          </size>
+         </property>
+         <property name="maximumSize">
+          <size>
+           <width>16777215</width>
+           <height>100</height>
+          </size>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">background-color: transparent;</string>
+         </property>
+         <property name="frameShape">
+          <enum>QFrame::StyledPanel</enum>
+         </property>
+         <property name="frameShadow">
+          <enum>QFrame::Raised</enum>
+         </property>
+         <layout class="QHBoxLayout" name="horizontalLayout_2">
+          <property name="spacing">
+           <number>0</number>
+          </property>
+          <property name="leftMargin">
+           <number>0</number>
+          </property>
+          <property name="topMargin">
+           <number>0</number>
+          </property>
+          <property name="rightMargin">
+           <number>0</number>
+          </property>
+          <property name="bottomMargin">
+           <number>0</number>
+          </property>
+          <item>
+           <widget class="QFrame" name="frame_2">
+            <property name="styleSheet">
+             <string notr="true">QPushButton:hover{
+background-color: rgb(0, 0, 64);
+}</string>
+            </property>
+            <property name="frameShape">
+             <enum>QFrame::StyledPanel</enum>
+            </property>
+            <property name="frameShadow">
+             <enum>QFrame::Raised</enum>
+            </property>
+            <layout class="QVBoxLayout" name="verticalLayout_3">
+             <property name="spacing">
+              <number>0</number>
+             </property>
+             <property name="leftMargin">
+              <number>0</number>
+             </property>
+             <property name="topMargin">
+              <number>0</number>
+             </property>
+             <property name="rightMargin">
+              <number>0</number>
+             </property>
+             <property name="bottomMargin">
+              <number>0</number>
+             </property>
+             <item alignment="Qt::AlignLeft|Qt::AlignBottom">
+              <widget class="QPushButton" name="btn_menu">
+               <property name="sizePolicy">
+                <sizepolicy hsizetype="Expanding" vsizetype="Fixed">
+                 <horstretch>0</horstretch>
+                 <verstretch>0</verstretch>
+                </sizepolicy>
+               </property>
+               <property name="styleSheet">
+                <string notr="true">QPushButton:hover{
+	background-color: rgb(16, 1, 186);
+}QPushButton{
+background-color: transparent;
+border: none;
+	color: white;
+	font: 63 16pt &quot;Yu Gothic UI Semibold&quot;;
+}
+QPushButton:pressed{
+background-color: rgb(25, 116, 210);
+}</string>
+               </property>
+               <property name="text">
+                <string>MENU</string>
+               </property>
+               <property name="icon">
+                <iconset>
+                 <normaloff>../doc_processing_panel/icons/button_menu.png</normaloff>../doc_processing_panel/icons/button_menu.png</iconset>
+               </property>
+               <property name="iconSize">
+                <size>
+                 <width>60</width>
+                 <height>60</height>
+                </size>
+               </property>
+              </widget>
+             </item>
+            </layout>
+           </widget>
+          </item>
+          <item>
+           <widget class="QFrame" name="frame_3">
+            <property name="frameShape">
+             <enum>QFrame::StyledPanel</enum>
+            </property>
+            <property name="frameShadow">
+             <enum>QFrame::Raised</enum>
+            </property>
+            <layout class="QVBoxLayout" name="verticalLayout_7">
+             <item>
+              <widget class="QLabel" name="label">
+               <property name="styleSheet">
+                <string notr="true">background-color: transparent;
+color: rgb(255, 255, 255);
+font: 57 32pt &quot;Times New Roman&quot;;</string>
+               </property>
+               <property name="text">
+                <string>Document Processing Panel</string>
+               </property>
+              </widget>
+             </item>
+            </layout>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+       </item>
+       <item>
+        <widget class="QFrame" name="main_body">
+         <property name="styleSheet">
+          <string notr="true">background-color: transparent;</string>
+         </property>
+         <property name="frameShape">
+          <enum>QFrame::StyledPanel</enum>
+         </property>
+         <property name="frameShadow">
+          <enum>QFrame::Raised</enum>
+         </property>
+         <layout class="QHBoxLayout" name="horizontalLayout">
+          <property name="spacing">
+           <number>0</number>
+          </property>
+          <property name="leftMargin">
+           <number>0</number>
+          </property>
+          <property name="topMargin">
+           <number>0</number>
+          </property>
+          <property name="rightMargin">
+           <number>0</number>
+          </property>
+          <property name="bottomMargin">
+           <number>0</number>
+          </property>
+          <item>
+           <widget class="QFrame" name="sidebar">
+            <property name="minimumSize">
+             <size>
+              <width>0</width>
+              <height>0</height>
+             </size>
+            </property>
+            <property name="maximumSize">
+             <size>
+              <width>0</width>
+              <height>16777215</height>
+             </size>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">background-color:rgb(0, 0, 97)</string>
+            </property>
+            <property name="frameShape">
+             <enum>QFrame::StyledPanel</enum>
+            </property>
+            <property name="frameShadow">
+             <enum>QFrame::Raised</enum>
+            </property>
+            <layout class="QVBoxLayout" name="verticalLayout_5">
+             <property name="spacing">
+              <number>0</number>
+             </property>
+             <property name="leftMargin">
+              <number>0</number>
+             </property>
+             <property name="topMargin">
+              <number>0</number>
+             </property>
+             <property name="rightMargin">
+              <number>0</number>
+             </property>
+             <property name="bottomMargin">
+              <number>0</number>
+             </property>
+             <item>
+              <widget class="QFrame" name="frame_4">
+               <property name="minimumSize">
+                <size>
+                 <width>0</width>
+                 <height>0</height>
+                </size>
+               </property>
+               <property name="toolTipDuration">
+                <number>0</number>
+               </property>
+               <property name="frameShape">
+                <enum>QFrame::StyledPanel</enum>
+               </property>
+               <property name="frameShadow">
+                <enum>QFrame::Raised</enum>
+               </property>
+               <layout class="QVBoxLayout" name="verticalLayout_6">
+                <property name="spacing">
+                 <number>0</number>
+                </property>
+                <property name="leftMargin">
+                 <number>0</number>
+                </property>
+                <property name="topMargin">
+                 <number>0</number>
+                </property>
+                <property name="rightMargin">
+                 <number>0</number>
+                </property>
+                <property name="bottomMargin">
+                 <number>0</number>
+                </property>
+                <item>
+                 <widget class="QLabel" name="label_3">
+                  <property name="sizePolicy">
+                   <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+                    <horstretch>0</horstretch>
+                    <verstretch>0</verstretch>
+                   </sizepolicy>
+                  </property>
+                  <property name="accessibleDescription">
+                   <string notr="true"/>
+                  </property>
+                  <property name="styleSheet">
+                   <string notr="true">background-color: transparent;
+color: rgb(255, 255, 255);
+font: 57 18pt &quot;Roboto Medium&quot;;
+border: 2px solid white;</string>
+                  </property>
+                  <property name="text">
+                   <string>Main Functions</string>
+                  </property>
+                 </widget>
+                </item>
+                <item>
+                 <widget class="QPushButton" name="btn_view">
+                  <property name="sizePolicy">
+                   <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+                    <horstretch>0</horstretch>
+                    <verstretch>0</verstretch>
+                   </sizepolicy>
+                  </property>
+                  <property name="styleSheet">
+                   <string notr="true">QPushButton{
+background-color: transparent;
+color: rgb(255, 255, 255);
+font: 57 18pt &quot;Roboto Medium&quot;;}
+QPushButton:hover{
+background-color: rgb(0, 0, 64);
+}
+QPushButton:pressed{
+background-color: rgb(128, 183, 255);
+}</string>
+                  </property>
+                  <property name="text">
+                   <string>View Table          </string>
+                  </property>
+                  <property name="icon">
+                   <iconset>
+                    <normaloff>../doc_processing_panel/icons/document_icon.png</normaloff>../doc_processing_panel/icons/document_icon.png</iconset>
+                  </property>
+                  <property name="iconSize">
+                   <size>
+                    <width>50</width>
+                    <height>50</height>
+                   </size>
+                  </property>
+                 </widget>
+                </item>
+                <item>
+                 <widget class="QPushButton" name="btn_accounts">
+                  <property name="sizePolicy">
+                   <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+                    <horstretch>0</horstretch>
+                    <verstretch>0</verstretch>
+                   </sizepolicy>
+                  </property>
+                  <property name="styleSheet">
+                   <string notr="true">QPushButton{
+background-color: transparent;
+color: rgb(255, 255, 255);
+font: 57 16pt &quot;Roboto Medium&quot;;}
+QPushButton:hover{
+background-color: rgb(0, 0, 64);
+}
+QPushButton:pressed{
+background-color: rgb(128, 183, 255);
+}</string>
+                  </property>
+                  <property name="text">
+                   <string>Manage Accounts </string>
+                  </property>
+                  <property name="icon">
+                   <iconset>
+                    <normaloff>../doc_processing_panel/icons/account_logo.png</normaloff>../doc_processing_panel/icons/account_logo.png</iconset>
+                  </property>
+                  <property name="iconSize">
+                   <size>
+                    <width>50</width>
+                    <height>50</height>
+                   </size>
+                  </property>
+                 </widget>
+                </item>
+                <item>
+                 <widget class="QPushButton" name="btn_tbledit">
+                  <property name="sizePolicy">
+                   <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+                    <horstretch>0</horstretch>
+                    <verstretch>0</verstretch>
+                   </sizepolicy>
+                  </property>
+                  <property name="styleSheet">
+                   <string notr="true">QPushButton{
+background-color: transparent;
+color: rgb(255, 255, 255);
+font: 57 15pt &quot;Roboto Medium&quot;;}
+QPushButton:hover{
+background-color: rgb(0, 0, 64);
+}
+QPushButton:pressed{
+background-color: rgb(128, 183, 255);
+}</string>
+                  </property>
+                  <property name="text">
+                   <string>Edit Row Contents   </string>
+                  </property>
+                  <property name="icon">
+                   <iconset>
+                    <normaloff>../doc_processing_panel/icons/row_icon.png</normaloff>../doc_processing_panel/icons/row_icon.png</iconset>
+                  </property>
+                  <property name="iconSize">
+                   <size>
+                    <width>50</width>
+                    <height>50</height>
+                   </size>
+                  </property>
+                 </widget>
+                </item>
+                <item>
+                 <widget class="QPushButton" name="btn_guide">
+                  <property name="sizePolicy">
+                   <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+                    <horstretch>0</horstretch>
+                    <verstretch>0</verstretch>
+                   </sizepolicy>
+                  </property>
+                  <property name="styleSheet">
+                   <string notr="true">QPushButton{
+background-color: transparent;
+color: rgb(255, 255, 255);
+font: 57 15pt &quot;Roboto Medium&quot;;}
+QPushButton:hover{
+background-color: rgb(0, 0, 64);
+}
+QPushButton:pressed{
+background-color: rgb(128, 183, 255);
+}</string>
+                  </property>
+                  <property name="text">
+                   <string>About Software       </string>
+                  </property>
+                  <property name="icon">
+                   <iconset>
+                    <normaloff>../doc_processing_panel/icons/about_logo.png</normaloff>../doc_processing_panel/icons/about_logo.png</iconset>
+                  </property>
+                  <property name="iconSize">
+                   <size>
+                    <width>50</width>
+                    <height>50</height>
+                   </size>
+                  </property>
+                 </widget>
+                </item>
+                <item>
+                 <widget class="QLabel" name="label_2">
+                  <property name="sizePolicy">
+                   <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+                    <horstretch>0</horstretch>
+                    <verstretch>0</verstretch>
+                   </sizepolicy>
+                  </property>
+                  <property name="styleSheet">
+                   <string notr="true">border: 2px solid white;
+background-color: transparent;
+color: rgb(255, 255, 255);
+font: 57 18pt &quot;Roboto Medium&quot;;</string>
+                  </property>
+                  <property name="text">
+                   <string>Kiosk Edit Functions</string>
+                  </property>
+                 </widget>
+                </item>
+                <item>
+                 <widget class="QPushButton" name="btn_doccontents">
+                  <property name="sizePolicy">
+                   <sizepolicy hsizetype="Minimum" vsizetype="Expanding">
+                    <horstretch>0</horstretch>
+                    <verstretch>0</verstretch>
+                   </sizepolicy>
+                  </property>
+                  <property name="styleSheet">
+                   <string notr="true">QPushButton{
+background-color: transparent;
+color: rgb(255, 255, 255);
+font: 57 14pt &quot;Roboto Medium&quot;;}
+QPushButton:hover{
+background-color: rgb(0, 0, 64);
+}
+QPushButton:pressed{
+background-color: rgb(128, 183, 255);
+}</string>
+                  </property>
+                  <property name="text">
+                   <string>Document Contents</string>
+                  </property>
+                  <property name="icon">
+                   <iconset>
+                    <normaloff>../doc_processing_panel/icons/edit_icon.png</normaloff>../doc_processing_panel/icons/edit_icon.png</iconset>
+                  </property>
+                  <property name="iconSize">
+                   <size>
+                    <width>50</width>
+                    <height>50</height>
+                   </size>
+                  </property>
+                 </widget>
+                </item>
+                <item>
+                 <widget class="QPushButton" name="btn_prices">
+                  <property name="sizePolicy">
+                   <sizepolicy hsizetype="Minimum" vsizetype="Expanding">
+                    <horstretch>0</horstretch>
+                    <verstretch>0</verstretch>
+                   </sizepolicy>
+                  </property>
+                  <property name="styleSheet">
+                   <string notr="true">QPushButton{
+background-color: transparent;
+color: rgb(255, 255, 255);
+font: 57 16pt &quot;Roboto Medium&quot;;}
+QPushButton:hover{
+background-color: rgb(0, 0, 64);
+}
+QPushButton:pressed{
+background-color: rgb(128, 183, 255);
+}</string>
+                  </property>
+                  <property name="text">
+                   <string>Document Prices  </string>
+                  </property>
+                  <property name="icon">
+                   <iconset>
+                    <normaloff>../doc_processing_panel/icons/price_icon.png</normaloff>../doc_processing_panel/icons/price_icon.png</iconset>
+                  </property>
+                  <property name="iconSize">
+                   <size>
+                    <width>50</width>
+                    <height>50</height>
+                   </size>
+                  </property>
+                 </widget>
+                </item>
+                <item>
+                 <widget class="QPushButton" name="none">
+                  <property name="sizePolicy">
+                   <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+                    <horstretch>0</horstretch>
+                    <verstretch>0</verstretch>
+                   </sizepolicy>
+                  </property>
+                  <property name="styleSheet">
+                   <string notr="true"/>
+                  </property>
+                  <property name="text">
+                   <string/>
+                  </property>
+                  <property name="iconSize">
+                   <size>
+                    <width>50</width>
+                    <height>50</height>
+                   </size>
+                  </property>
+                 </widget>
+                </item>
+               </layout>
+              </widget>
+             </item>
+            </layout>
+           </widget>
+          </item>
+          <item>
+           <widget class="QFrame" name="body">
+            <property name="frameShape">
+             <enum>QFrame::StyledPanel</enum>
+            </property>
+            <property name="frameShadow">
+             <enum>QFrame::Raised</enum>
+            </property>
+            <layout class="QVBoxLayout" name="verticalLayout_4">
+             <property name="spacing">
+              <number>0</number>
+             </property>
+             <property name="leftMargin">
+              <number>0</number>
+             </property>
+             <property name="topMargin">
+              <number>0</number>
+             </property>
+             <property name="rightMargin">
+              <number>0</number>
+             </property>
+             <property name="bottomMargin">
+              <number>0</number>
+             </property>
+             <item>
+              <widget class="QStackedWidget" name="stackedWidget">
+               <property name="styleSheet">
+                <string notr="true">#stackedWidget{border: 2px solid white;}
+</string>
+               </property>
+               <property name="currentIndex">
+                <number>6</number>
+               </property>
+               <widget class="QWidget" name="accounts">
+                <layout class="QVBoxLayout" name="verticalLayout_19">
+                 <property name="spacing">
+                  <number>0</number>
+                 </property>
+                 <property name="leftMargin">
+                  <number>0</number>
+                 </property>
+                 <property name="topMargin">
+                  <number>0</number>
+                 </property>
+                 <property name="rightMargin">
+                  <number>0</number>
+                 </property>
+                 <property name="bottomMargin">
+                  <number>0</number>
+                 </property>
+                 <item>
+                  <widget class="QFrame" name="frame_20">
+                   <property name="frameShape">
+                    <enum>QFrame::StyledPanel</enum>
+                   </property>
+                   <property name="frameShadow">
+                    <enum>QFrame::Raised</enum>
+                   </property>
+                   <layout class="QVBoxLayout" name="verticalLayout_20">
+                    <property name="spacing">
+                     <number>0</number>
+                    </property>
+                    <property name="leftMargin">
+                     <number>0</number>
+                    </property>
+                    <property name="topMargin">
+                     <number>0</number>
+                    </property>
+                    <property name="rightMargin">
+                     <number>0</number>
+                    </property>
+                    <property name="bottomMargin">
+                     <number>0</number>
+                    </property>
+                    <item>
+                     <widget class="QFrame" name="frame_21">
+                      <property name="minimumSize">
+                       <size>
+                        <width>0</width>
+                        <height>50</height>
+                       </size>
+                      </property>
+                      <property name="maximumSize">
+                       <size>
+                        <width>16777215</width>
+                        <height>50</height>
+                       </size>
+                      </property>
+                      <property name="frameShape">
+                       <enum>QFrame::StyledPanel</enum>
+                      </property>
+                      <property name="frameShadow">
+                       <enum>QFrame::Raised</enum>
+                      </property>
+                      <layout class="QVBoxLayout" name="verticalLayout_21">
+                       <property name="spacing">
+                        <number>0</number>
+                       </property>
+                       <property name="leftMargin">
+                        <number>0</number>
+                       </property>
+                       <property name="topMargin">
+                        <number>0</number>
+                       </property>
+                       <property name="rightMargin">
+                        <number>0</number>
+                       </property>
+                       <property name="bottomMargin">
+                        <number>0</number>
+                       </property>
+                       <item>
+                        <widget class="QLabel" name="label_64">
+                         <property name="styleSheet">
+                          <string notr="true">	color: rgb(255, 255, 255);
+	font: 26pt &quot;Helvetica Neue&quot;;
+	background-color: transparent;
+</string>
+                         </property>
+                         <property name="text">
+                          <string>Verifications and Transactions</string>
+                         </property>
+                        </widget>
+                       </item>
+                      </layout>
+                     </widget>
+                    </item>
+                    <item>
+                     <widget class="QFrame" name="frame_22">
+                      <property name="frameShape">
+                       <enum>QFrame::StyledPanel</enum>
+                      </property>
+                      <property name="frameShadow">
+                       <enum>QFrame::Raised</enum>
+                      </property>
+                      <layout class="QHBoxLayout" name="horizontalLayout_7">
+                       <item>
+                        <widget class="QFrame" name="frame_25">
+                         <property name="frameShape">
+                          <enum>QFrame::StyledPanel</enum>
+                         </property>
+                         <property name="frameShadow">
+                          <enum>QFrame::Raised</enum>
+                         </property>
+                         <layout class="QHBoxLayout" name="horizontalLayout_8">
+                          <property name="spacing">
+                           <number>0</number>
+                          </property>
+                          <property name="leftMargin">
+                           <number>0</number>
+                          </property>
+                          <property name="topMargin">
+                           <number>0</number>
+                          </property>
+                          <property name="rightMargin">
+                           <number>0</number>
+                          </property>
+                          <property name="bottomMargin">
+                           <number>0</number>
+                          </property>
+                          <item>
+                           <widget class="QFrame" name="frame_26">
+                            <property name="frameShape">
+                             <enum>QFrame::StyledPanel</enum>
+                            </property>
+                            <property name="frameShadow">
+                             <enum>QFrame::Raised</enum>
+                            </property>
+                            <layout class="QHBoxLayout" name="horizontalLayout_9">
+                             <property name="spacing">
+                              <number>0</number>
+                             </property>
+                             <property name="leftMargin">
+                              <number>0</number>
+                             </property>
+                             <property name="topMargin">
+                              <number>0</number>
+                             </property>
+                             <property name="rightMargin">
+                              <number>0</number>
+                             </property>
+                             <property name="bottomMargin">
+                              <number>0</number>
+                             </property>
+                             <item>
+                              <widget class="QFrame" name="frame_24">
+                               <property name="frameShape">
+                                <enum>QFrame::StyledPanel</enum>
+                               </property>
+                               <property name="frameShadow">
+                                <enum>QFrame::Raised</enum>
+                               </property>
+                               <layout class="QHBoxLayout" name="horizontalLayout_10">
+                                <item>
+                                 <widget class="QFrame" name="frame_29">
+                                  <property name="frameShape">
+                                   <enum>QFrame::StyledPanel</enum>
+                                  </property>
+                                  <property name="frameShadow">
+                                   <enum>QFrame::Raised</enum>
+                                  </property>
+                                  <widget class="QTableWidget" name="tbl_accounts">
+                                   <property name="geometry">
+                                    <rect>
+                                     <x>20</x>
+                                     <y>0</y>
+                                     <width>201</width>
+                                     <height>731</height>
+                                    </rect>
+                                   </property>
+                                   <property name="styleSheet">
+                                    <string notr="true">background-color: white;</string>
+                                   </property>
+                                   <column>
+                                    <property name="text">
+                                     <string>Email</string>
+                                    </property>
+                                   </column>
+                                   <column>
+                                    <property name="text">
+                                     <string>Verification Status</string>
+                                    </property>
+                                   </column>
+                                  </widget>
+                                  <widget class="QPushButton" name="user_delete">
+                                   <property name="geometry">
+                                    <rect>
+                                     <x>270</x>
+                                     <y>80</y>
+                                     <width>155</width>
+                                     <height>37</height>
+                                    </rect>
+                                   </property>
+                                   <property name="styleSheet">
+                                    <string notr="true">QPushButton{
+background-color: rgb(25, 116, 210);
+color: rgb(255, 255, 255);
+font: 57 18pt &quot;Roboto Medium&quot;;
+}
+QPushButton:hover{
+background-color: rgb(30, 143, 255);
+}
+QPushButton:pressed{
+background-color: rgb(0, 170, 255);
+}</string>
+                                   </property>
+                                   <property name="text">
+                                    <string>Delete User</string>
+                                   </property>
+                                  </widget>
+                                  <widget class="QPushButton" name="user_verify">
+                                   <property name="geometry">
+                                    <rect>
+                                     <x>270</x>
+                                     <y>130</y>
+                                     <width>155</width>
+                                     <height>37</height>
+                                    </rect>
+                                   </property>
+                                   <property name="styleSheet">
+                                    <string notr="true">QPushButton{
+background-color: rgb(25, 116, 210);
+color: rgb(255, 255, 255);
+font: 57 18pt &quot;Roboto Medium&quot;;
+}
+QPushButton:hover{
+background-color: rgb(30, 143, 255);
+}
+QPushButton:pressed{
+background-color: rgb(0, 170, 255);
+}</string>
+                                   </property>
+                                   <property name="text">
+                                    <string>Verify</string>
+                                   </property>
+                                  </widget>
+                                  <widget class="QPushButton" name="ref_table">
+                                   <property name="geometry">
+                                    <rect>
+                                     <x>270</x>
+                                     <y>230</y>
+                                     <width>155</width>
+                                     <height>37</height>
+                                    </rect>
+                                   </property>
+                                   <property name="styleSheet">
+                                    <string notr="true">QPushButton{
+background-color: rgb(25, 116, 210);
+color: rgb(255, 255, 255);
+font: 57 18pt &quot;Roboto Medium&quot;;
+}
+QPushButton:hover{
+background-color: rgb(30, 143, 255);
+}
+QPushButton:pressed{
+background-color: rgb(0, 170, 255);
+}</string>
+                                   </property>
+                                   <property name="text">
+                                    <string>Refresh Table</string>
+                                   </property>
+                                  </widget>
+                                  <widget class="QPushButton" name="user_unverify">
+                                   <property name="geometry">
+                                    <rect>
+                                     <x>270</x>
+                                     <y>180</y>
+                                     <width>155</width>
+                                     <height>37</height>
+                                    </rect>
+                                   </property>
+                                   <property name="styleSheet">
+                                    <string notr="true">QPushButton{
+background-color: rgb(25, 116, 210);
+color: rgb(255, 255, 255);
+font: 57 18pt &quot;Roboto Medium&quot;;
+}
+QPushButton:hover{
+background-color: rgb(30, 143, 255);
+}
+QPushButton:pressed{
+background-color: rgb(0, 170, 255);
+}</string>
+                                   </property>
+                                   <property name="text">
+                                    <string>Unverify</string>
+                                   </property>
+                                  </widget>
+                                  <widget class="QTableWidget" name="tbl_accounts_2">
+                                   <property name="geometry">
+                                    <rect>
+                                     <x>600</x>
+                                     <y>0</y>
+                                     <width>301</width>
+                                     <height>731</height>
+                                    </rect>
+                                   </property>
+                                   <property name="styleSheet">
+                                    <string notr="true">background-color: white;</string>
+                                   </property>
+                                   <column>
+                                    <property name="text">
+                                     <string>Name</string>
+                                    </property>
+                                   </column>
+                                   <column>
+                                    <property name="text">
+                                     <string>Requested Doc</string>
+                                    </property>
+                                   </column>
+                                   <column>
+                                    <property name="text">
+                                     <string>Price</string>
+                                    </property>
+                                   </column>
+                                  </widget>
+                                  <widget class="QPushButton" name="ref_tabletransaction">
+                                   <property name="geometry">
+                                    <rect>
+                                     <x>920</x>
+                                     <y>60</y>
+                                     <width>155</width>
+                                     <height>37</height>
+                                    </rect>
+                                   </property>
+                                   <property name="styleSheet">
+                                    <string notr="true">QPushButton{
+background-color: rgb(25, 116, 210);
+color: rgb(255, 255, 255);
+font: 57 18pt &quot;Roboto Medium&quot;;
+}
+QPushButton:hover{
+background-color: rgb(30, 143, 255);
+}
+QPushButton:pressed{
+background-color: rgb(0, 170, 255);
+}</string>
+                                   </property>
+                                   <property name="text">
+                                    <string>Refresh Table</string>
+                                   </property>
+                                  </widget>
+                                  <widget class="QPushButton" name="edit_accounts">
+                                   <property name="geometry">
+                                    <rect>
+                                     <x>270</x>
+                                     <y>280</y>
+                                     <width>155</width>
+                                     <height>37</height>
+                                    </rect>
+                                   </property>
+                                   <property name="styleSheet">
+                                    <string notr="true">QPushButton{
+background-color: rgb(25, 116, 210);
+color: rgb(255, 255, 255);
+font: 57 18pt &quot;Roboto Medium&quot;;
+}
+QPushButton:hover{
+background-color: rgb(30, 143, 255);
+}
+QPushButton:pressed{
+background-color: rgb(0, 170, 255);
+}</string>
+                                   </property>
+                                   <property name="text">
+                                    <string>Edit Accounts</string>
+                                   </property>
+                                  </widget>
+                                 </widget>
+                                </item>
+                               </layout>
+                              </widget>
+                             </item>
+                            </layout>
+                           </widget>
+                          </item>
+                         </layout>
+                        </widget>
+                       </item>
+                      </layout>
+                     </widget>
+                    </item>
+                   </layout>
+                  </widget>
+                 </item>
+                </layout>
+               </widget>
+               <widget class="QWidget" name="edit_contents">
+                <layout class="QVBoxLayout" name="verticalLayout_13">
+                 <property name="spacing">
+                  <number>0</number>
+                 </property>
+                 <property name="leftMargin">
+                  <number>0</number>
+                 </property>
+                 <property name="topMargin">
+                  <number>0</number>
+                 </property>
+                 <property name="rightMargin">
+                  <number>0</number>
+                 </property>
+                 <property name="bottomMargin">
+                  <number>0</number>
+                 </property>
+                 <item>
+                  <widget class="QFrame" name="frame_11">
+                   <property name="frameShape">
+                    <enum>QFrame::StyledPanel</enum>
+                   </property>
+                   <property name="frameShadow">
+                    <enum>QFrame::Raised</enum>
+                   </property>
+                   <layout class="QFormLayout" name="formLayout_3">
+                    <item row="0" column="0" colspan="2">
+                     <widget class="QLabel" name="label_40">
+                      <property name="styleSheet">
+                       <string notr="true">	color: rgb(255, 255, 255);
+	font: 26pt &quot;Helvetica Neue&quot;;
+	background-color: transparent;
+</string>
+                      </property>
+                      <property name="text">
+                       <string>Edit Row Contents</string>
+                      </property>
+                     </widget>
+                    </item>
+                    <item row="1" column="0">
+                     <widget class="QLabel" name="label_41">
+                      <property name="styleSheet">
+                       <string notr="true">	color: rgb(255, 255, 255);
+	font: 22pt &quot;Helvetica Neue&quot;;
+	background-color: transparent;</string>
+                      </property>
+                      <property name="text">
+                       <string>Reference #:</string>
+                      </property>
+                     </widget>
+                    </item>
+                    <item row="1" column="1">
+                     <widget class="QLineEdit" name="line_editref">
+                      <property name="styleSheet">
+                       <string notr="true">	color: rgb(255, 255, 255);
+	font: 22pt &quot;Helvetica Neue&quot;;
+	background-color: #1974D2;
+border: none;</string>
+                      </property>
+                      <property name="text">
+                       <string/>
+                      </property>
+                      <property name="placeholderText">
+                       <string>Enter Reference # here to autofill</string>
+                      </property>
+                     </widget>
+                    </item>
+                    <item row="2" column="0">
+                     <widget class="QLabel" name="label_42">
+                      <property name="styleSheet">
+                       <string notr="true">	color: rgb(255, 255, 255);
+	font: 22pt &quot;Helvetica Neue&quot;;
+	background-color: transparent;</string>
+                      </property>
+                      <property name="text">
+                       <string>Name:</string>
+                      </property>
+                     </widget>
+                    </item>
+                    <item row="2" column="1">
+                     <widget class="QLineEdit" name="line_editname">
+                      <property name="styleSheet">
+                       <string notr="true">	color: rgb(255, 255, 255);
+	font: 22pt &quot;Helvetica Neue&quot;;
+	background-color: #1974D2;
+border: none;</string>
+                      </property>
+                      <property name="text">
+                       <string/>
+                      </property>
+                      <property name="placeholderText">
+                       <string>Firstname M.I. Lastname</string>
+                      </property>
+                     </widget>
+                    </item>
+                    <item row="3" column="0">
+                     <widget class="QLabel" name="label_43">
+                      <property name="styleSheet">
+                       <string notr="true">	color: rgb(255, 255, 255);
+	font: 22pt &quot;Helvetica Neue&quot;;
+	background-color: transparent;</string>
+                      </property>
+                      <property name="text">
+                       <string>Age:</string>
+                      </property>
+                     </widget>
+                    </item>
+                    <item row="3" column="1">
+                     <widget class="QLineEdit" name="line_editage">
+                      <property name="styleSheet">
+                       <string notr="true">	color: rgb(255, 255, 255);
+	font: 22pt &quot;Helvetica Neue&quot;;
+	background-color: #1974D2;
+border: none;</string>
+                      </property>
+                      <property name="text">
+                       <string/>
+                      </property>
+                      <property name="placeholderText">
+                       <string>Age</string>
+                      </property>
+                     </widget>
+                    </item>
+                    <item row="4" column="0">
+                     <widget class="QLabel" name="label_45">
+                      <property name="styleSheet">
+                       <string notr="true">	color: rgb(255, 255, 255);
+	font: 22pt &quot;Helvetica Neue&quot;;
+	background-color: transparent;</string>
+                      </property>
+                      <property name="text">
+                       <string>Sex:</string>
+                      </property>
+                     </widget>
+                    </item>
+                    <item row="4" column="1">
+                     <widget class="QLineEdit" name="line_editsex">
+                      <property name="styleSheet">
+                       <string notr="true">	color: rgb(255, 255, 255);
+	font: 22pt &quot;Helvetica Neue&quot;;
+	background-color: #1974D2;
+border: none;</string>
+                      </property>
+                      <property name="text">
+                       <string/>
+                      </property>
+                      <property name="placeholderText">
+                       <string>Male or Female</string>
+                      </property>
+                     </widget>
+                    </item>
+                    <item row="5" column="0">
+                     <widget class="QLabel" name="label_44">
+                      <property name="styleSheet">
+                       <string notr="true">	color: rgb(255, 255, 255);
+	font: 22pt &quot;Helvetica Neue&quot;;
+	background-color: transparent;</string>
+                      </property>
+                      <property name="text">
+                       <string>Document Type:</string>
+                      </property>
+                     </widget>
+                    </item>
+                    <item row="5" column="1">
+                     <widget class="QComboBox" name="cBox_doctype">
+                      <property name="styleSheet">
+                       <string notr="true">
+#cBox_doctype QAbstractItemView{
+selection-background-color: rgb(72, 82, 101);
+}
+#cBox_doctype::drop-down{
+border: 0px;
+}
+QComboBox{
+border: 4px;
+color: rgb(255, 255, 255);
+	font: 16pt &quot;Helvetica Neue&quot;;
+}
+#cBox_doctype:on{
+border: 4px solid rgb(72, 82, 101);
+}
+#cBox_doctype QListView{
+color: rgb(255, 255, 255);
+}
+</string>
+                      </property>
+                      <item>
+                       <property name="text">
+                        <string>Click here to Select</string>
+                       </property>
+                      </item>
+                      <item>
+                       <property name="text">
+                        <string>Business Permit</string>
+                       </property>
+                      </item>
+                      <item>
+                       <property name="text">
+                        <string>Indigency</string>
+                       </property>
+                      </item>
+                      <item>
+                       <property name="text">
+                        <string>Certificate for First Time Job Seeker</string>
+                       </property>
+                      </item>
+                      <item>
+                       <property name="text">
+                        <string>Barangay Clearance</string>
+                       </property>
+                      </item>
+                      <item>
+                       <property name="text">
+                        <string>First Time Job Seeker</string>
+                       </property>
+                      </item>
+                     </widget>
+                    </item>
+                    <item row="6" column="0">
+                     <widget class="QLabel" name="label_46">
+                      <property name="styleSheet">
+                       <string notr="true">	color: rgb(255, 255, 255);
+	font: 22pt &quot;Helvetica Neue&quot;;
+	background-color: transparent;</string>
+                      </property>
+                      <property name="text">
+                       <string>Birthplace:</string>
+                      </property>
+                     </widget>
+                    </item>
+                    <item row="6" column="1">
+                     <widget class="QLineEdit" name="line_editbirthplace">
+                      <property name="styleSheet">
+                       <string notr="true">	color: rgb(255, 255, 255);
+	font: 22pt &quot;Helvetica Neue&quot;;
+	background-color: #1974D2;
+border: none;</string>
+                      </property>
+                      <property name="text">
+                       <string/>
+                      </property>
+                      <property name="placeholderText">
+                       <string>Birthplace</string>
+                      </property>
+                     </widget>
+                    </item>
+                    <item row="7" column="0">
+                     <widget class="QLabel" name="label_47">
+                      <property name="styleSheet">
+                       <string notr="true">	color: rgb(255, 255, 255);
+	font: 22pt &quot;Helvetica Neue&quot;;
+	background-color: transparent;</string>
+                      </property>
+                      <property name="text">
+                       <string>Birthdate:</string>
+                      </property>
+                     </widget>
+                    </item>
+                    <item row="8" column="0">
+                     <widget class="QLabel" name="label_48">
+                      <property name="styleSheet">
+                       <string notr="true">	color: rgb(255, 255, 255);
+	font: 22pt &quot;Helvetica Neue&quot;;
+	background-color: transparent;</string>
+                      </property>
+                      <property name="text">
+                       <string>Business Name:</string>
+                      </property>
+                     </widget>
+                    </item>
+                    <item row="8" column="1">
+                     <widget class="QLineEdit" name="line_editbusinessname">
+                      <property name="styleSheet">
+                       <string notr="true">	color: rgb(255, 255, 255);
+	font: 22pt &quot;Helvetica Neue&quot;;
+	background-color: #1974D2;
+border: none;</string>
+                      </property>
+                      <property name="text">
+                       <string/>
+                      </property>
+                      <property name="placeholderText">
+                       <string>Business Name</string>
+                      </property>
+                     </widget>
+                    </item>
+                    <item row="9" column="0">
+                     <widget class="QLabel" name="label_49">
+                      <property name="styleSheet">
+                       <string notr="true">	color: rgb(255, 255, 255);
+	font: 22pt &quot;Helvetica Neue&quot;;
+	background-color: transparent;</string>
+                      </property>
+                      <property name="text">
+                       <string>Business Address:</string>
+                      </property>
+                     </widget>
+                    </item>
+                    <item row="9" column="1">
+                     <widget class="QLineEdit" name="line_editbusinessaddress">
+                      <property name="styleSheet">
+                       <string notr="true">	color: rgb(255, 255, 255);
+	font: 22pt &quot;Helvetica Neue&quot;;
+	background-color: #1974D2;
+border: none;</string>
+                      </property>
+                      <property name="text">
+                       <string/>
+                      </property>
+                      <property name="placeholderText">
+                       <string>Business Address</string>
+                      </property>
+                     </widget>
+                    </item>
+                    <item row="10" column="0">
+                     <widget class="QLabel" name="label_51">
+                      <property name="styleSheet">
+                       <string notr="true">	color: rgb(255, 255, 255);
+	font: 22pt &quot;Helvetica Neue&quot;;
+	background-color: transparent;</string>
+                      </property>
+                      <property name="text">
+                       <string>Citizenship:</string>
+                      </property>
+                     </widget>
+                    </item>
+                    <item row="10" column="1">
+                     <widget class="QLineEdit" name="line_editcitizenship">
+                      <property name="styleSheet">
+                       <string notr="true">	color: rgb(255, 255, 255);
+	font: 22pt &quot;Helvetica Neue&quot;;
+	background-color: #1974D2;
+border: none;</string>
+                      </property>
+                      <property name="text">
+                       <string/>
+                      </property>
+                      <property name="placeholderText">
+                       <string>Citizenship</string>
+                      </property>
+                     </widget>
+                    </item>
+                    <item row="11" column="0">
+                     <widget class="QLabel" name="label_52">
+                      <property name="styleSheet">
+                       <string notr="true">	color: rgb(255, 255, 255);
+	font: 22pt &quot;Helvetica Neue&quot;;
+	background-color: transparent;</string>
+                      </property>
+                      <property name="text">
+                       <string>Civil Status:</string>
+                      </property>
+                     </widget>
+                    </item>
+                    <item row="11" column="1">
+                     <widget class="QLineEdit" name="line_editcivilstatus">
+                      <property name="styleSheet">
+                       <string notr="true">	color: rgb(255, 255, 255);
+	font: 22pt &quot;Helvetica Neue&quot;;
+	background-color: #1974D2;
+border: none;</string>
+                      </property>
+                      <property name="text">
+                       <string/>
+                      </property>
+                      <property name="placeholderText">
+                       <string>Civil Status</string>
+                      </property>
+                     </widget>
+                    </item>
+                    <item row="12" column="0">
+                     <widget class="QLabel" name="label_50">
+                      <property name="styleSheet">
+                       <string notr="true">	color: rgb(255, 255, 255);
+	font: 22pt &quot;Helvetica Neue&quot;;
+	background-color: transparent;</string>
+                      </property>
+                      <property name="text">
+                       <string>Purpose:</string>
+                      </property>
+                     </widget>
+                    </item>
+                    <item row="12" column="1">
+                     <widget class="QComboBox" name="cBox_purpose">
+                      <property name="styleSheet">
+                       <string notr="true">
+#cBox_purpose QAbstractItemView{
+selection-background-color: rgb(72, 82, 101);
+}
+#cBox_purpose::drop-down{
+border: 0px;
+}
+QComboBox{
+border: 4px;
+color: rgb(255, 255, 255);
+	font: 16pt &quot;Helvetica Neue&quot;;
+}
+#cBox_purpose:on{
+border: 4px solid rgb(72, 82, 101);
+}
+#cBox_purpose QListView{
+color: rgb(255, 255, 255);
+}
+</string>
+                      </property>
+                      <item>
+                       <property name="text">
+                        <string>Click here to Select</string>
+                       </property>
+                      </item>
+                      <item>
+                       <property name="text">
+                        <string>Educational Assistance</string>
+                       </property>
+                      </item>
+                      <item>
+                       <property name="text">
+                        <string>Financial Assistance</string>
+                       </property>
+                      </item>
+                      <item>
+                       <property name="text">
+                        <string>Medical Assistance</string>
+                       </property>
+                      </item>
+                      <item>
+                       <property name="text">
+                        <string>Loan</string>
+                       </property>
+                      </item>
+                      <item>
+                       <property name="text">
+                        <string>Motor Loan</string>
+                       </property>
+                      </item>
+                      <item>
+                       <property name="text">
+                        <string>Local Employment</string>
+                       </property>
+                      </item>
+                      <item>
+                       <property name="text">
+                        <string>Bank Requirements</string>
+                       </property>
+                      </item>
+                      <item>
+                       <property name="text">
+                        <string>Police Clearance</string>
+                       </property>
+                      </item>
+                     </widget>
+                    </item>
+                    <item row="13" column="0" colspan="2">
+                     <widget class="QFrame" name="frame_15">
+                      <property name="styleSheet">
+                       <string notr="true">background-color: transparent;</string>
+                      </property>
+                      <property name="frameShape">
+                       <enum>QFrame::StyledPanel</enum>
+                      </property>
+                      <property name="frameShadow">
+                       <enum>QFrame::Raised</enum>
+                      </property>
+                      <layout class="QHBoxLayout" name="horizontalLayout_4">
+                       <property name="spacing">
+                        <number>200</number>
+                       </property>
+                       <item>
+                        <widget class="QPushButton" name="edit_row">
+                         <property name="styleSheet">
+                          <string notr="true">QPushButton{
+background-color: rgb(109, 125, 153);
+color: white;
+font: 20pt &quot;Segoe UI&quot;;border-radius: 16px;
+}</string>
+                         </property>
+                         <property name="text">
+                          <string>Edit</string>
+                         </property>
+                        </widget>
+                       </item>
+                      </layout>
+                     </widget>
+                    </item>
+                    <item row="7" column="1">
+                     <widget class="QLineEdit" name="line_editbirthdate">
+                      <property name="styleSheet">
+                       <string notr="true">	color: rgb(255, 255, 255);
+	font: 22pt &quot;Helvetica Neue&quot;;
+	background-color: #1974D2;
+border: none;</string>
+                      </property>
+                      <property name="text">
+                       <string/>
+                      </property>
+                      <property name="placeholderText">
+                       <string>Birthdate</string>
+                      </property>
+                     </widget>
+                    </item>
+                   </layout>
+                  </widget>
+                 </item>
+                </layout>
+               </widget>
+               <widget class="QWidget" name="guide">
+                <layout class="QVBoxLayout" name="verticalLayout_15">
+                 <property name="spacing">
+                  <number>0</number>
+                 </property>
+                 <property name="leftMargin">
+                  <number>0</number>
+                 </property>
+                 <property name="topMargin">
+                  <number>0</number>
+                 </property>
+                 <property name="rightMargin">
+                  <number>0</number>
+                 </property>
+                 <property name="bottomMargin">
+                  <number>0</number>
+                 </property>
+                 <item>
+                  <widget class="QFrame" name="frame_13">
+                   <property name="frameShape">
+                    <enum>QFrame::StyledPanel</enum>
+                   </property>
+                   <property name="frameShadow">
+                    <enum>QFrame::Raised</enum>
+                   </property>
+                   <layout class="QVBoxLayout" name="verticalLayout_23">
+                    <property name="spacing">
+                     <number>0</number>
+                    </property>
+                    <property name="leftMargin">
+                     <number>0</number>
+                    </property>
+                    <property name="topMargin">
+                     <number>0</number>
+                    </property>
+                    <property name="rightMargin">
+                     <number>0</number>
+                    </property>
+                    <property name="bottomMargin">
+                     <number>0</number>
+                    </property>
+                    <item>
+                     <widget class="QFrame" name="frame_27">
+                      <property name="maximumSize">
+                       <size>
+                        <width>16777215</width>
+                        <height>75</height>
+                       </size>
+                      </property>
+                      <property name="frameShape">
+                       <enum>QFrame::StyledPanel</enum>
+                      </property>
+                      <property name="frameShadow">
+                       <enum>QFrame::Raised</enum>
+                      </property>
+                      <layout class="QVBoxLayout" name="verticalLayout_24">
+                       <item>
+                        <widget class="QLabel" name="label_66">
+                         <property name="styleSheet">
+                          <string notr="true">	color: rgb(255, 255, 255);
+	font: 26pt &quot;Helvetica Neue&quot;;
+	background-color: transparent;
+</string>
+                         </property>
+                         <property name="text">
+                          <string>About Software:</string>
+                         </property>
+                        </widget>
+                       </item>
+                      </layout>
+                     </widget>
+                    </item>
+                    <item alignment="Qt::AlignTop">
+                     <widget class="QFrame" name="frame_28">
+                      <property name="frameShape">
+                       <enum>QFrame::StyledPanel</enum>
+                      </property>
+                      <property name="frameShadow">
+                       <enum>QFrame::Raised</enum>
+                      </property>
+                      <layout class="QVBoxLayout" name="verticalLayout_22">
+                       <item>
+                        <widget class="QLabel" name="label_67">
+                         <property name="styleSheet">
+                          <string notr="true">	color: rgb(255, 255, 255);
+	font: 26pt &quot;Helvetica Neue&quot;;
+	background-color: transparent;
+</string>
+                         </property>
+                         <property name="text">
+                          <string>Document Processing Panel is a software that is used as a tool 
+for the Kiosk Software named Document Processing for Kiosk.
+This software can receive some inputs from the Kiosk version
+so that this software can; create a file requested by the
+Kiosk user; Manage Accounts that are or will be able to use
+the Kiosk version; edit the document's specified personnels
+whenever there's a change; and edit document's prices.</string>
+                         </property>
+                        </widget>
+                       </item>
+                      </layout>
+                     </widget>
+                    </item>
+                    <item>
+                     <widget class="QFrame" name="frame_23">
+                      <property name="frameShape">
+                       <enum>QFrame::StyledPanel</enum>
+                      </property>
+                      <property name="frameShadow">
+                       <enum>QFrame::Raised</enum>
+                      </property>
+                      <layout class="QVBoxLayout" name="verticalLayout_25">
+                       <item alignment="Qt::AlignTop">
+                        <widget class="QLabel" name="label_68">
+                         <property name="styleSheet">
+                          <string notr="true">	color: rgb(255, 255, 255);
+	font: 26pt &quot;Helvetica Neue&quot;;
+	background-color: transparent;
+</string>
+                         </property>
+                         <property name="text">
+                          <string>However, if there is a file template needed to be changed,
+you may need to rename the new file and paste it to the
+folder where the old template was located.
+
+Click the &quot;MENU&quot; button above for the sidebar to appear.
+</string>
+                         </property>
+                        </widget>
+                       </item>
+                      </layout>
+                     </widget>
+                    </item>
+                   </layout>
+                  </widget>
+                 </item>
+                </layout>
+               </widget>
+               <widget class="QWidget" name="doc_prices">
+                <layout class="QVBoxLayout" name="verticalLayout_10">
+                 <property name="spacing">
+                  <number>0</number>
+                 </property>
+                 <property name="leftMargin">
+                  <number>0</number>
+                 </property>
+                 <property name="topMargin">
+                  <number>0</number>
+                 </property>
+                 <property name="rightMargin">
+                  <number>0</number>
+                 </property>
+                 <property name="bottomMargin">
+                  <number>0</number>
+                 </property>
+                 <item>
+                  <widget class="QFrame" name="frame_8">
+                   <property name="frameShape">
+                    <enum>QFrame::StyledPanel</enum>
+                   </property>
+                   <property name="frameShadow">
+                    <enum>QFrame::Raised</enum>
+                   </property>
+                   <layout class="QFormLayout" name="formLayout">
+                    <item row="0" column="0">
+                     <widget class="QLabel" name="label_37">
+                      <property name="styleSheet">
+                       <string notr="true">	color: rgb(255, 255, 255);
+	font: 26pt &quot;Helvetica Neue&quot;;
+	background-color: transparent;</string>
+                      </property>
+                      <property name="text">
+                       <string>Document Prices Edit</string>
+                      </property>
+                     </widget>
+                    </item>
+                    <item row="1" column="0">
+                     <widget class="QLabel" name="label_36">
+                      <property name="styleSheet">
+                       <string notr="true">	color: rgb(255, 255, 255);
+	font: 22pt &quot;Helvetica Neue&quot;;
+	background-color: transparent;</string>
+                      </property>
+                      <property name="text">
+                       <string>Certification for First Time Jobseeker Price:</string>
+                      </property>
+                     </widget>
+                    </item>
+                    <item row="1" column="1">
+                     <widget class="QLineEdit" name="lineEdit">
+                      <property name="styleSheet">
+                       <string notr="true">	color: rgb(255, 255, 255);
+	font: 22pt &quot;Helvetica Neue&quot;;
+	background-color: #1974D2;
+border: none;</string>
+                      </property>
+                      <property name="text">
+                       <string/>
+                      </property>
+                      <property name="placeholderText">
+                       <string>If the document is free, then put &quot;Free&quot;. If not, include currency sign. Ex: Php. 50.00</string>
+                      </property>
+                     </widget>
+                    </item>
+                    <item row="2" column="0">
+                     <widget class="QLabel" name="label_38">
+                      <property name="styleSheet">
+                       <string notr="true">	color: rgb(255, 255, 255);
+	font: 22pt &quot;Helvetica Neue&quot;;
+	background-color: transparent;</string>
+                      </property>
+                      <property name="text">
+                       <string>Business Permit Price:</string>
+                      </property>
+                     </widget>
+                    </item>
+                    <item row="2" column="1">
+                     <widget class="QLineEdit" name="lineEdit_2">
+                      <property name="styleSheet">
+                       <string notr="true">	color: rgb(255, 255, 255);
+	font: 22pt &quot;Helvetica Neue&quot;;
+	background-color: #1974D2;
+border: none;</string>
+                      </property>
+                      <property name="text">
+                       <string/>
+                      </property>
+                      <property name="placeholderText">
+                       <string>If the document is free, then put &quot;Free&quot;. If not, include currency sign. Ex: Php. 50.00</string>
+                      </property>
+                     </widget>
+                    </item>
+                    <item row="3" column="0">
+                     <widget class="QLabel" name="label_39">
+                      <property name="styleSheet">
+                       <string notr="true">	color: rgb(255, 255, 255);
+	font: 22pt &quot;Helvetica Neue&quot;;
+	background-color: transparent;</string>
+                      </property>
+                      <property name="text">
+                       <string>Barangay Clearance Price:</string>
+                      </property>
+                     </widget>
+                    </item>
+                    <item row="3" column="1">
+                     <widget class="QLineEdit" name="lineEdit_3">
+                      <property name="styleSheet">
+                       <string notr="true">	color: rgb(255, 255, 255);
+	font: 22pt &quot;Helvetica Neue&quot;;
+	background-color: #1974D2;
+border: none;</string>
+                      </property>
+                      <property name="text">
+                       <string/>
+                      </property>
+                      <property name="placeholderText">
+                       <string>If the document is free, then put &quot;Free&quot;. If not, include currency sign. Ex: Php. 50.00</string>
+                      </property>
+                     </widget>
+                    </item>
+                    <item row="4" column="0" colspan="2">
+                     <widget class="QFrame" name="frame_16">
+                      <property name="styleSheet">
+                       <string notr="true">background-color: transparent;</string>
+                      </property>
+                      <property name="frameShape">
+                       <enum>QFrame::StyledPanel</enum>
+                      </property>
+                      <property name="frameShadow">
+                       <enum>QFrame::Raised</enum>
+                      </property>
+                      <layout class="QHBoxLayout" name="horizontalLayout_5">
+                       <property name="spacing">
+                        <number>200</number>
+                       </property>
+                       <item>
+                        <widget class="QPushButton" name="edit_price">
+                         <property name="styleSheet">
+                          <string notr="true">QPushButton{
+background-color: rgb(109, 125, 153);
+color: white;
+font: 20pt &quot;Segoe UI&quot;;border-radius: 16px;
+}</string>
+                         </property>
+                         <property name="text">
+                          <string>Edit</string>
+                         </property>
+                        </widget>
+                       </item>
+                      </layout>
+                     </widget>
+                    </item>
+                   </layout>
+                  </widget>
+                 </item>
+                </layout>
+               </widget>
+               <widget class="QWidget" name="doc_contents">
+                <layout class="QVBoxLayout" name="verticalLayout_14">
+                 <property name="spacing">
+                  <number>0</number>
+                 </property>
+                 <property name="leftMargin">
+                  <number>0</number>
+                 </property>
+                 <property name="topMargin">
+                  <number>0</number>
+                 </property>
+                 <property name="rightMargin">
+                  <number>0</number>
+                 </property>
+                 <property name="bottomMargin">
+                  <number>0</number>
+                 </property>
+                 <item>
+                  <widget class="QFrame" name="frame_12">
+                   <property name="frameShape">
+                    <enum>QFrame::StyledPanel</enum>
+                   </property>
+                   <property name="frameShadow">
+                    <enum>QFrame::Raised</enum>
+                   </property>
+                   <layout class="QVBoxLayout" name="verticalLayout_16">
+                    <property name="spacing">
+                     <number>0</number>
+                    </property>
+                    <property name="leftMargin">
+                     <number>0</number>
+                    </property>
+                    <property name="topMargin">
+                     <number>0</number>
+                    </property>
+                    <property name="rightMargin">
+                     <number>0</number>
+                    </property>
+                    <property name="bottomMargin">
+                     <number>0</number>
+                    </property>
+                    <item>
+                     <widget class="QFrame" name="frame_14">
+                      <property name="frameShape">
+                       <enum>QFrame::StyledPanel</enum>
+                      </property>
+                      <property name="frameShadow">
+                       <enum>QFrame::Raised</enum>
+                      </property>
+                      <layout class="QVBoxLayout" name="verticalLayout_17">
+                       <property name="spacing">
+                        <number>0</number>
+                       </property>
+                       <property name="leftMargin">
+                        <number>0</number>
+                       </property>
+                       <property name="topMargin">
+                        <number>0</number>
+                       </property>
+                       <property name="rightMargin">
+                        <number>0</number>
+                       </property>
+                       <property name="bottomMargin">
+                        <number>0</number>
+                       </property>
+                       <item>
+                        <widget class="QFrame" name="frame_17">
+                         <property name="minimumSize">
+                          <size>
+                           <width>0</width>
+                           <height>75</height>
+                          </size>
+                         </property>
+                         <property name="maximumSize">
+                          <size>
+                           <width>16777215</width>
+                           <height>75</height>
+                          </size>
+                         </property>
+                         <property name="frameShape">
+                          <enum>QFrame::StyledPanel</enum>
+                         </property>
+                         <property name="frameShadow">
+                          <enum>QFrame::Raised</enum>
+                         </property>
+                         <layout class="QVBoxLayout" name="verticalLayout_18">
+                          <item>
+                           <widget class="QLabel" name="label_53">
+                            <property name="styleSheet">
+                             <string notr="true">	color: rgb(255, 255, 255);
+	font: 26pt &quot;Helvetica Neue&quot;;
+	background-color: transparent;</string>
+                            </property>
+                            <property name="text">
+                             <string>Document Contents Edit</string>
+                            </property>
+                           </widget>
+                          </item>
+                         </layout>
+                        </widget>
+                       </item>
+                       <item>
+                        <widget class="QFrame" name="frame_18">
+                         <property name="frameShape">
+                          <enum>QFrame::StyledPanel</enum>
+                         </property>
+                         <property name="frameShadow">
+                          <enum>QFrame::Raised</enum>
+                         </property>
+                         <layout class="QFormLayout" name="formLayout_4">
+                          <item row="0" column="0">
+                           <widget class="QLabel" name="label_54">
+                            <property name="styleSheet">
+                             <string notr="true">	color: rgb(255, 255, 255);
+	font: 22pt &quot;Helvetica Neue&quot;;
+	background-color: transparent;</string>
+                            </property>
+                            <property name="text">
+                             <string>Barangay Year: </string>
+                            </property>
+                           </widget>
+                          </item>
+                          <item row="0" column="1">
+                           <widget class="QLineEdit" name="lineEdit_4">
+                            <property name="styleSheet">
+                             <string notr="true">	color: rgb(255, 255, 255);
+	font: 22pt &quot;Helvetica Neue&quot;;
+	background-color: #1974D2;
+border: none;</string>
+                            </property>
+                            <property name="text">
+                             <string/>
+                            </property>
+                            <property name="placeholderText">
+                             <string>2xxx - 2yyy Ex: 2023-2025</string>
+                            </property>
+                           </widget>
+                          </item>
+                          <item row="1" column="0">
+                           <widget class="QLabel" name="label_55">
+                            <property name="styleSheet">
+                             <string notr="true">	color: rgb(255, 255, 255);
+	font: 22pt &quot;Helvetica Neue&quot;;
+	background-color: transparent;</string>
+                            </property>
+                            <property name="text">
+                             <string>Barangay Captain: </string>
+                            </property>
+                           </widget>
+                          </item>
+                          <item row="1" column="1">
+                           <widget class="QLineEdit" name="line_captain">
+                            <property name="styleSheet">
+                             <string notr="true">	color: rgb(255, 255, 255);
+	font: 22pt &quot;Helvetica Neue&quot;;
+	background-color: #1974D2;
+border: none;</string>
+                            </property>
+                            <property name="text">
+                             <string/>
+                            </property>
+                            <property name="placeholderText">
+                             <string>Name of Barangay Captain</string>
+                            </property>
+                           </widget>
+                          </item>
+                          <item row="2" column="0">
+                           <widget class="QLabel" name="label_57">
+                            <property name="styleSheet">
+                             <string notr="true">	color: rgb(255, 255, 255);
+	font: 22pt &quot;Helvetica Neue&quot;;
+	background-color: transparent;</string>
+                            </property>
+                            <property name="text">
+                             <string>Comm. on Health and Solid Waste: </string>
+                            </property>
+                           </widget>
+                          </item>
+                          <item row="2" column="1">
+                           <widget class="QLineEdit" name="line_chsw">
+                            <property name="styleSheet">
+                             <string notr="true">	color: rgb(255, 255, 255);
+	font: 22pt &quot;Helvetica Neue&quot;;
+	background-color: #1974D2;
+border: none;</string>
+                            </property>
+                            <property name="text">
+                             <string/>
+                            </property>
+                            <property name="placeholderText">
+                             <string>Name of Kagawad In Charge</string>
+                            </property>
+                           </widget>
+                          </item>
+                          <item row="3" column="0">
+                           <widget class="QLabel" name="label_58">
+                            <property name="styleSheet">
+                             <string notr="true">	color: rgb(255, 255, 255);
+	font: 22pt &quot;Helvetica Neue&quot;;
+	background-color: transparent;</string>
+                            </property>
+                            <property name="text">
+                             <string>Comm. on Livelihood: </string>
+                            </property>
+                           </widget>
+                          </item>
+                          <item row="3" column="1">
+                           <widget class="QLineEdit" name="line_livelihood">
+                            <property name="styleSheet">
+                             <string notr="true">	color: rgb(255, 255, 255);
+	font: 22pt &quot;Helvetica Neue&quot;;
+	background-color: #1974D2;
+border: none;</string>
+                            </property>
+                            <property name="text">
+                             <string/>
+                            </property>
+                            <property name="placeholderText">
+                             <string>Name of Kagawad In Charge</string>
+                            </property>
+                           </widget>
+                          </item>
+                          <item row="4" column="0">
+                           <widget class="QLabel" name="label_60">
+                            <property name="styleSheet">
+                             <string notr="true">	color: rgb(255, 255, 255);
+	font: 22pt &quot;Helvetica Neue&quot;;
+	background-color: transparent;</string>
+                            </property>
+                            <property name="text">
+                             <string>Comm. on Education &amp; Beautification: </string>
+                            </property>
+                           </widget>
+                          </item>
+                          <item row="4" column="1">
+                           <widget class="QLineEdit" name="line_ceb">
+                            <property name="styleSheet">
+                             <string notr="true">	color: rgb(255, 255, 255);
+	font: 22pt &quot;Helvetica Neue&quot;;
+	background-color: #1974D2;
+border: none;</string>
+                            </property>
+                            <property name="text">
+                             <string/>
+                            </property>
+                            <property name="placeholderText">
+                             <string>Name of Kagawad In Charge</string>
+                            </property>
+                           </widget>
+                          </item>
+                          <item row="5" column="0">
+                           <widget class="QLabel" name="label_59">
+                            <property name="styleSheet">
+                             <string notr="true">	color: rgb(255, 255, 255);
+	font: 22pt &quot;Helvetica Neue&quot;;
+	background-color: transparent;</string>
+                            </property>
+                            <property name="text">
+                             <string>Comm. on Peace and Order: </string>
+                            </property>
+                           </widget>
+                          </item>
+                          <item row="5" column="1">
+                           <widget class="QLineEdit" name="line_cpo">
+                            <property name="styleSheet">
+                             <string notr="true">	color: rgb(255, 255, 255);
+	font: 22pt &quot;Helvetica Neue&quot;;
+	background-color: #1974D2;
+border: none;</string>
+                            </property>
+                            <property name="text">
+                             <string/>
+                            </property>
+                            <property name="placeholderText">
+                             <string>Name of Kagawad In Charge</string>
+                            </property>
+                           </widget>
+                          </item>
+                          <item row="6" column="0">
+                           <widget class="QLabel" name="label_61">
+                            <property name="styleSheet">
+                             <string notr="true">	color: rgb(255, 255, 255);
+	font: 22pt &quot;Helvetica Neue&quot;;
+	background-color: transparent;</string>
+                            </property>
+                            <property name="text">
+                             <string>Comm. on Social Services: </string>
+                            </property>
+                           </widget>
+                          </item>
+                          <item row="6" column="1">
+                           <widget class="QLineEdit" name="line_css">
+                            <property name="styleSheet">
+                             <string notr="true">	color: rgb(255, 255, 255);
+	font: 22pt &quot;Helvetica Neue&quot;;
+	background-color: #1974D2;
+border: none;</string>
+                            </property>
+                            <property name="text">
+                             <string/>
+                            </property>
+                            <property name="placeholderText">
+                             <string>Name of Kagawad In Charge</string>
+                            </property>
+                           </widget>
+                          </item>
+                          <item row="7" column="0">
+                           <widget class="QLabel" name="label_62">
+                            <property name="styleSheet">
+                             <string notr="true">	color: rgb(255, 255, 255);
+	font: 22pt &quot;Helvetica Neue&quot;;
+	background-color: transparent;</string>
+                            </property>
+                            <property name="text">
+                             <string>Comm. on Sports &amp; Youth Development: </string>
+                            </property>
+                           </widget>
+                          </item>
+                          <item row="7" column="1">
+                           <widget class="QLineEdit" name="line_csyd">
+                            <property name="styleSheet">
+                             <string notr="true">	color: rgb(255, 255, 255);
+	font: 22pt &quot;Helvetica Neue&quot;;
+	background-color: #1974D2;
+border: none;</string>
+                            </property>
+                            <property name="text">
+                             <string/>
+                            </property>
+                            <property name="placeholderText">
+                             <string>Name of Kagawad In Charge</string>
+                            </property>
+                           </widget>
+                          </item>
+                          <item row="8" column="0">
+                           <widget class="QLabel" name="label_56">
+                            <property name="styleSheet">
+                             <string notr="true">	color: rgb(255, 255, 255);
+	font: 22pt &quot;Helvetica Neue&quot;;
+	background-color: transparent;</string>
+                            </property>
+                            <property name="text">
+                             <string>Comm. on Finance/ Comm. on Public Works: </string>
+                            </property>
+                           </widget>
+                          </item>
+                          <item row="8" column="1">
+                           <widget class="QLineEdit" name="line_cfcp">
+                            <property name="styleSheet">
+                             <string notr="true">	color: rgb(255, 255, 255);
+	font: 22pt &quot;Helvetica Neue&quot;;
+	background-color: #1974D2;
+border: none;</string>
+                            </property>
+                            <property name="text">
+                             <string/>
+                            </property>
+                            <property name="placeholderText">
+                             <string>Name of Kagawad In Charge</string>
+                            </property>
+                           </widget>
+                          </item>
+                          <item row="9" column="0">
+                           <widget class="QLabel" name="label_63">
+                            <property name="styleSheet">
+                             <string notr="true">	color: rgb(255, 255, 255);
+	font: 22pt &quot;Helvetica Neue&quot;;
+	background-color: transparent;</string>
+                            </property>
+                            <property name="text">
+                             <string>Sk Chairman: </string>
+                            </property>
+                           </widget>
+                          </item>
+                          <item row="9" column="1">
+                           <widget class="QLineEdit" name="line_skchairman">
+                            <property name="styleSheet">
+                             <string notr="true">	color: rgb(255, 255, 255);
+	font: 22pt &quot;Helvetica Neue&quot;;
+	background-color: #1974D2;
+border: none;</string>
+                            </property>
+                            <property name="text">
+                             <string/>
+                            </property>
+                            <property name="placeholderText">
+                             <string>Name of Kagawad In Charge</string>
+                            </property>
+                           </widget>
+                          </item>
+                          <item row="10" column="0" colspan="2">
+                           <widget class="QFrame" name="frame_19">
+                            <property name="minimumSize">
+                             <size>
+                              <width>0</width>
+                              <height>100</height>
+                             </size>
+                            </property>
+                            <property name="styleSheet">
+                             <string notr="true">background-color: transparent;</string>
+                            </property>
+                            <property name="frameShape">
+                             <enum>QFrame::StyledPanel</enum>
+                            </property>
+                            <property name="frameShadow">
+                             <enum>QFrame::Raised</enum>
+                            </property>
+                            <layout class="QHBoxLayout" name="horizontalLayout_6">
+                             <property name="spacing">
+                              <number>200</number>
+                             </property>
+                             <item>
+                              <widget class="QPushButton" name="edit_doccontent">
+                               <property name="styleSheet">
+                                <string notr="true">QPushButton{
+background-color: rgb(109, 125, 153);
+color: white;
+font: 20pt &quot;Segoe UI&quot;;border-radius: 16px;
+}</string>
+                               </property>
+                               <property name="text">
+                                <string>Edit</string>
+                               </property>
+                              </widget>
+                             </item>
+                            </layout>
+                           </widget>
+                          </item>
+                         </layout>
+                        </widget>
+                       </item>
+                      </layout>
+                     </widget>
+                    </item>
+                   </layout>
+                  </widget>
+                 </item>
+                </layout>
+               </widget>
+               <widget class="QWidget" name="page">
+                <layout class="QVBoxLayout" name="verticalLayout_26">
+                 <property name="spacing">
+                  <number>0</number>
+                 </property>
+                 <property name="leftMargin">
+                  <number>0</number>
+                 </property>
+                 <property name="topMargin">
+                  <number>0</number>
+                 </property>
+                 <property name="rightMargin">
+                  <number>0</number>
+                 </property>
+                 <property name="bottomMargin">
+                  <number>0</number>
+                 </property>
+                 <item>
+                  <widget class="QFrame" name="frame_30">
+                   <property name="frameShape">
+                    <enum>QFrame::StyledPanel</enum>
+                   </property>
+                   <property name="frameShadow">
+                    <enum>QFrame::Raised</enum>
+                   </property>
+                   <layout class="QHBoxLayout" name="horizontalLayout_11">
+                    <property name="spacing">
+                     <number>0</number>
+                    </property>
+                    <property name="leftMargin">
+                     <number>0</number>
+                    </property>
+                    <property name="topMargin">
+                     <number>0</number>
+                    </property>
+                    <property name="rightMargin">
+                     <number>0</number>
+                    </property>
+                    <property name="bottomMargin">
+                     <number>0</number>
+                    </property>
+                    <item>
+                     <widget class="QFrame" name="frame_31">
+                      <property name="frameShape">
+                       <enum>QFrame::StyledPanel</enum>
+                      </property>
+                      <property name="frameShadow">
+                       <enum>QFrame::Raised</enum>
+                      </property>
+                      <layout class="QHBoxLayout" name="horizontalLayout_12">
+                       <property name="spacing">
+                        <number>0</number>
+                       </property>
+                       <property name="leftMargin">
+                        <number>0</number>
+                       </property>
+                       <property name="topMargin">
+                        <number>0</number>
+                       </property>
+                       <property name="rightMargin">
+                        <number>0</number>
+                       </property>
+                       <property name="bottomMargin">
+                        <number>0</number>
+                       </property>
+                       <item>
+                        <widget class="QTableWidget" name="tbl_accView">
+                         <property name="styleSheet">
+                          <string notr="true">background-color: white;</string>
+                         </property>
+                         <column>
+                          <property name="text">
+                           <string>Email</string>
+                          </property>
+                         </column>
+                         <column>
+                          <property name="text">
+                           <string>Password</string>
+                          </property>
+                         </column>
+                         <column>
+                          <property name="text">
+                           <string>Name</string>
+                          </property>
+                         </column>
+                         <column>
+                          <property name="text">
+                           <string>Sex</string>
+                          </property>
+                         </column>
+                         <column>
+                          <property name="text">
+                           <string>Address</string>
+                          </property>
+                         </column>
+                         <column>
+                          <property name="text">
+                           <string>Birthdate</string>
+                          </property>
+                         </column>
+                         <column>
+                          <property name="text">
+                           <string>Birthplace</string>
+                          </property>
+                         </column>
+                         <column>
+                          <property name="text">
+                           <string>Civil Status</string>
+                          </property>
+                         </column>
+                         <column>
+                          <property name="text">
+                           <string>Citizenship</string>
+                          </property>
+                         </column>
+                        </widget>
+                       </item>
+                      </layout>
+                     </widget>
+                    </item>
+                    <item>
+                     <widget class="QFrame" name="frame_32">
+                      <property name="minimumSize">
+                       <size>
+                        <width>200</width>
+                        <height>0</height>
+                       </size>
+                      </property>
+                      <property name="maximumSize">
+                       <size>
+                        <width>250</width>
+                        <height>16777215</height>
+                       </size>
+                      </property>
+                      <property name="frameShape">
+                       <enum>QFrame::StyledPanel</enum>
+                      </property>
+                      <property name="frameShadow">
+                       <enum>QFrame::Raised</enum>
+                      </property>
+                      <layout class="QHBoxLayout" name="horizontalLayout_13">
+                       <item>
+                        <widget class="QFrame" name="frame_33">
+                         <property name="styleSheet">
+                          <string notr="true">#frame_33{border: 2px solid white;}</string>
+                         </property>
+                         <property name="frameShape">
+                          <enum>QFrame::StyledPanel</enum>
+                         </property>
+                         <property name="frameShadow">
+                          <enum>QFrame::Raised</enum>
+                         </property>
+                         <layout class="QVBoxLayout" name="verticalLayout_27">
+                          <item>
+                           <widget class="QLabel" name="label_10">
+                            <property name="styleSheet">
+                             <string notr="true">background-color: transparent;
+color: rgb(255, 255, 255);
+font: 57 14pt &quot;Roboto Medium&quot;;
+</string>
+                            </property>
+                            <property name="text">
+                             <string>Edit Account Contents</string>
+                            </property>
+                           </widget>
+                          </item>
+                          <item>
+                           <widget class="QLabel" name="label_11">
+                            <property name="styleSheet">
+                             <string notr="true">background-color: transparent;
+color: rgb(255, 255, 255);
+font: 57 14pt &quot;Roboto Medium&quot;;</string>
+                            </property>
+                            <property name="text">
+                             <string>Email</string>
+                            </property>
+                           </widget>
+                          </item>
+                          <item>
+                           <widget class="QLineEdit" name="edit_email">
+                            <property name="styleSheet">
+                             <string notr="true">	color: rgb(255, 255, 255);
+	font: 14pt &quot;Helvetica Neue&quot;;
+	background-color: #1974D2;
+border: none;</string>
+                            </property>
+                            <property name="placeholderText">
+                             <string>Enter Email</string>
+                            </property>
+                           </widget>
+                          </item>
+                          <item>
+                           <widget class="QLabel" name="label_12">
+                            <property name="styleSheet">
+                             <string notr="true">background-color: transparent;
+color: rgb(255, 255, 255);
+font: 57 14pt &quot;Roboto Medium&quot;;</string>
+                            </property>
+                            <property name="text">
+                             <string>Password</string>
+                            </property>
+                           </widget>
+                          </item>
+                          <item>
+                           <widget class="QLineEdit" name="edit_password">
+                            <property name="styleSheet">
+                             <string notr="true">	color: rgb(255, 255, 255);
+	font: 14pt &quot;Helvetica Neue&quot;;
+	background-color: #1974D2;
+border: none;</string>
+                            </property>
+                            <property name="placeholderText">
+                             <string>Password</string>
+                            </property>
+                           </widget>
+                          </item>
+                          <item>
+                           <widget class="QLabel" name="label_13">
+                            <property name="styleSheet">
+                             <string notr="true">background-color: transparent;
+color: rgb(255, 255, 255);
+font: 57 14pt &quot;Roboto Medium&quot;;</string>
+                            </property>
+                            <property name="text">
+                             <string>Name</string>
+                            </property>
+                           </widget>
+                          </item>
+                          <item>
+                           <widget class="QLineEdit" name="edit_uname">
+                            <property name="styleSheet">
+                             <string notr="true">	color: rgb(255, 255, 255);
+	font: 14pt &quot;Helvetica Neue&quot;;
+	background-color: #1974D2;
+border: none;</string>
+                            </property>
+                            <property name="placeholderText">
+                             <string>Name</string>
+                            </property>
+                           </widget>
+                          </item>
+                          <item>
+                           <widget class="QLabel" name="label_14">
+                            <property name="styleSheet">
+                             <string notr="true">background-color: transparent;
+color: rgb(255, 255, 255);
+font: 57 14pt &quot;Roboto Medium&quot;;</string>
+                            </property>
+                            <property name="text">
+                             <string>Sex</string>
+                            </property>
+                           </widget>
+                          </item>
+                          <item>
+                           <widget class="QLineEdit" name="edit_usex">
+                            <property name="styleSheet">
+                             <string notr="true">	color: rgb(255, 255, 255);
+	font: 14pt &quot;Helvetica Neue&quot;;
+	background-color: #1974D2;
+border: none;</string>
+                            </property>
+                            <property name="placeholderText">
+                             <string>Sex</string>
+                            </property>
+                           </widget>
+                          </item>
+                          <item>
+                           <widget class="QLabel" name="label_17">
+                            <property name="styleSheet">
+                             <string notr="true">background-color: transparent;
+color: rgb(255, 255, 255);
+font: 57 14pt &quot;Roboto Medium&quot;;</string>
+                            </property>
+                            <property name="text">
+                             <string>Address</string>
+                            </property>
+                           </widget>
+                          </item>
+                          <item>
+                           <widget class="QLineEdit" name="edit_uaddress">
+                            <property name="styleSheet">
+                             <string notr="true">	color: rgb(255, 255, 255);
+	font: 14pt &quot;Helvetica Neue&quot;;
+	background-color: #1974D2;
+border: none;</string>
+                            </property>
+                            <property name="placeholderText">
+                             <string>Address</string>
+                            </property>
+                           </widget>
+                          </item>
+                          <item>
+                           <widget class="QLabel" name="label_15">
+                            <property name="styleSheet">
+                             <string notr="true">background-color: transparent;
+color: rgb(255, 255, 255);
+font: 57 14pt &quot;Roboto Medium&quot;;</string>
+                            </property>
+                            <property name="text">
+                             <string>Birthdate</string>
+                            </property>
+                           </widget>
+                          </item>
+                          <item>
+                           <widget class="QLineEdit" name="edit_ubday">
+                            <property name="styleSheet">
+                             <string notr="true">	color: rgb(255, 255, 255);
+	font: 14pt &quot;Helvetica Neue&quot;;
+	background-color: #1974D2;
+border: none;</string>
+                            </property>
+                            <property name="placeholderText">
+                             <string>Birthdate</string>
+                            </property>
+                           </widget>
+                          </item>
+                          <item>
+                           <widget class="QLabel" name="label_18">
+                            <property name="styleSheet">
+                             <string notr="true">background-color: transparent;
+color: rgb(255, 255, 255);
+font: 57 14pt &quot;Roboto Medium&quot;;</string>
+                            </property>
+                            <property name="text">
+                             <string>Birthplace</string>
+                            </property>
+                           </widget>
+                          </item>
+                          <item>
+                           <widget class="QLineEdit" name="edit_ubplace">
+                            <property name="styleSheet">
+                             <string notr="true">	color: rgb(255, 255, 255);
+	font: 14pt &quot;Helvetica Neue&quot;;
+	background-color: #1974D2;
+border: none;</string>
+                            </property>
+                            <property name="placeholderText">
+                             <string>Birthplace</string>
+                            </property>
+                           </widget>
+                          </item>
+                          <item>
+                           <widget class="QLabel" name="label_16">
+                            <property name="styleSheet">
+                             <string notr="true">background-color: transparent;
+color: rgb(255, 255, 255);
+font: 57 14pt &quot;Roboto Medium&quot;;</string>
+                            </property>
+                            <property name="text">
+                             <string>Civil Status</string>
+                            </property>
+                           </widget>
+                          </item>
+                          <item>
+                           <widget class="QLineEdit" name="edit_ucstatus">
+                            <property name="styleSheet">
+                             <string notr="true">	color: rgb(255, 255, 255);
+	font: 14pt &quot;Helvetica Neue&quot;;
+	background-color: #1974D2;
+border: none;</string>
+                            </property>
+                            <property name="placeholderText">
+                             <string>Civil Status</string>
+                            </property>
+                           </widget>
+                          </item>
+                          <item>
+                           <widget class="QLabel" name="label_19">
+                            <property name="styleSheet">
+                             <string notr="true">background-color: transparent;
+color: rgb(255, 255, 255);
+font: 57 14pt &quot;Roboto Medium&quot;;</string>
+                            </property>
+                            <property name="text">
+                             <string>Citizenship</string>
+                            </property>
+                           </widget>
+                          </item>
+                          <item>
+                           <widget class="QLineEdit" name="edit_ucitizenship">
+                            <property name="styleSheet">
+                             <string notr="true">	color: rgb(255, 255, 255);
+	font: 14pt &quot;Helvetica Neue&quot;;
+	background-color: #1974D2;
+border: none;</string>
+                            </property>
+                            <property name="placeholderText">
+                             <string>Citizenship</string>
+                            </property>
+                           </widget>
+                          </item>
+                          <item>
+                           <widget class="QPushButton" name="edit_user">
+                            <property name="styleSheet">
+                             <string notr="true">QPushButton{
+border: none;
+background-color: rgb(25, 116, 210);
+color: rgb(255, 255, 255);
+font: 57 12pt &quot;Roboto Medium&quot;;}
+QPushButton:hover{
+background-color: rgb(30, 143, 255);
+}
+QPushButton:pressed{
+background-color: rgb(0, 170, 255);
+}</string>
+                            </property>
+                            <property name="text">
+                             <string>Edit User</string>
+                            </property>
+                           </widget>
+                          </item>
+                          <item>
+                           <widget class="QPushButton" name="refresh_edittabel">
+                            <property name="styleSheet">
+                             <string notr="true">QPushButton{
+border: none;
+background-color: rgb(25, 116, 210);
+color: rgb(255, 255, 255);
+font: 57 12pt &quot;Roboto Medium&quot;;}
+QPushButton:hover{
+background-color: rgb(30, 143, 255);
+}
+QPushButton:pressed{
+background-color: rgb(0, 170, 255);
+}</string>
+                            </property>
+                            <property name="text">
+                             <string>Refresh</string>
+                            </property>
+                           </widget>
+                          </item>
+                         </layout>
+                        </widget>
+                       </item>
+                      </layout>
+                     </widget>
+                    </item>
+                   </layout>
+                  </widget>
+                 </item>
+                </layout>
+               </widget>
+               <widget class="QWidget" name="tbl_view">
+                <layout class="QVBoxLayout" name="verticalLayout_8">
+                 <property name="spacing">
+                  <number>0</number>
+                 </property>
+                 <property name="leftMargin">
+                  <number>0</number>
+                 </property>
+                 <property name="topMargin">
+                  <number>0</number>
+                 </property>
+                 <property name="rightMargin">
+                  <number>0</number>
+                 </property>
+                 <property name="bottomMargin">
+                  <number>0</number>
+                 </property>
+                 <item>
+                  <widget class="QFrame" name="frame_5">
+                   <property name="frameShape">
+                    <enum>QFrame::StyledPanel</enum>
+                   </property>
+                   <property name="frameShadow">
+                    <enum>QFrame::Raised</enum>
+                   </property>
+                   <layout class="QHBoxLayout" name="horizontalLayout_3">
+                    <property name="spacing">
+                     <number>0</number>
+                    </property>
+                    <property name="leftMargin">
+                     <number>0</number>
+                    </property>
+                    <property name="topMargin">
+                     <number>0</number>
+                    </property>
+                    <property name="rightMargin">
+                     <number>0</number>
+                    </property>
+                    <property name="bottomMargin">
+                     <number>0</number>
+                    </property>
+                    <item>
+                     <widget class="QFrame" name="frame_6">
+                      <property name="frameShape">
+                       <enum>QFrame::StyledPanel</enum>
+                      </property>
+                      <property name="frameShadow">
+                       <enum>QFrame::Raised</enum>
+                      </property>
+                      <layout class="QVBoxLayout" name="verticalLayout_9">
+                       <item>
+                        <widget class="QLineEdit" name="line_searchbar">
+                         <property name="styleSheet">
+                          <string notr="true">	color: rgb(255, 255, 255);
+	font: 14pt &quot;Helvetica Neue&quot;;
+	background-color: #1974D2;
+border: none;</string>
+                         </property>
+                         <property name="placeholderText">
+                          <string>Enter Email</string>
+                         </property>
+                        </widget>
+                       </item>
+                       <item>
+                        <widget class="QTableWidget" name="tbl_forview">
+                         <property name="styleSheet">
+                          <string notr="true">background-color: white;</string>
+                         </property>
+                         <column>
+                          <property name="text">
+                           <string>Reference #</string>
+                          </property>
+                         </column>
+                         <column>
+                          <property name="text">
+                           <string>Date Added</string>
+                          </property>
+                         </column>
+                         <column>
+                          <property name="text">
+                           <string>Requested Doc</string>
+                          </property>
+                         </column>
+                         <column>
+                          <property name="text">
+                           <string>Price</string>
+                          </property>
+                         </column>
+                         <column>
+                          <property name="text">
+                           <string>Name</string>
+                          </property>
+                         </column>
+                         <column>
+                          <property name="text">
+                           <string>Age</string>
+                          </property>
+                         </column>
+                         <column>
+                          <property name="text">
+                           <string>Sex</string>
+                          </property>
+                         </column>
+                         <column>
+                          <property name="text">
+                           <string>Address</string>
+                          </property>
+                         </column>
+                         <column>
+                          <property name="text">
+                           <string>Requirements</string>
+                          </property>
+                         </column>
+                         <column>
+                          <property name="text">
+                           <string>Birthdate</string>
+                          </property>
+                         </column>
+                         <column>
+                          <property name="text">
+                           <string>Birthplace</string>
+                          </property>
+                         </column>
+                         <column>
+                          <property name="text">
+                           <string>Civil Status</string>
+                          </property>
+                         </column>
+                         <column>
+                          <property name="text">
+                           <string>Citizenship</string>
+                          </property>
+                         </column>
+                         <column>
+                          <property name="text">
+                           <string>Purpose</string>
+                          </property>
+                         </column>
+                         <column>
+                          <property name="text">
+                           <string>Business Name</string>
+                          </property>
+                         </column>
+                         <column>
+                          <property name="text">
+                           <string>Business Address</string>
+                          </property>
+                         </column>
+                         <column>
+                          <property name="text">
+                           <string>Years Stayed</string>
+                          </property>
+                         </column>
+                        </widget>
+                       </item>
+                      </layout>
+                     </widget>
+                    </item>
+                    <item>
+                     <widget class="QFrame" name="frame_7">
+                      <property name="minimumSize">
+                       <size>
+                        <width>200</width>
+                        <height>0</height>
+                       </size>
+                      </property>
+                      <property name="maximumSize">
+                       <size>
+                        <width>200</width>
+                        <height>16777215</height>
+                       </size>
+                      </property>
+                      <property name="frameShape">
+                       <enum>QFrame::StyledPanel</enum>
+                      </property>
+                      <property name="frameShadow">
+                       <enum>QFrame::Raised</enum>
+                      </property>
+                      <layout class="QVBoxLayout" name="verticalLayout_11">
+                       <item>
+                        <widget class="QFrame" name="frame_10">
+                         <property name="minimumSize">
+                          <size>
+                           <width>0</width>
+                           <height>357</height>
+                          </size>
+                         </property>
+                         <property name="maximumSize">
+                          <size>
+                           <width>16777215</width>
+                           <height>357</height>
+                          </size>
+                         </property>
+                         <property name="frameShape">
+                          <enum>QFrame::StyledPanel</enum>
+                         </property>
+                         <property name="frameShadow">
+                          <enum>QFrame::Raised</enum>
+                         </property>
+                         <layout class="QVBoxLayout" name="verticalLayout_12">
+                          <property name="spacing">
+                           <number>20</number>
+                          </property>
+                          <property name="leftMargin">
+                           <number>0</number>
+                          </property>
+                          <property name="topMargin">
+                           <number>0</number>
+                          </property>
+                          <property name="rightMargin">
+                           <number>0</number>
+                          </property>
+                          <property name="bottomMargin">
+                           <number>10</number>
+                          </property>
+                          <item>
+                           <widget class="QPushButton" name="btn_create">
+                            <property name="sizePolicy">
+                             <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+                              <horstretch>0</horstretch>
+                              <verstretch>0</verstretch>
+                             </sizepolicy>
+                            </property>
+                            <property name="styleSheet">
+                             <string notr="true">QPushButton{
+background-color: rgb(25, 116, 210);
+color: rgb(255, 255, 255);
+font: 57 18pt &quot;Roboto Medium&quot;;
+border-radius:20px;}
+QPushButton:hover{
+background-color: rgb(30, 143, 255);
+}
+QPushButton:pressed{
+background-color: rgb(0, 170, 255);
+}</string>
+                            </property>
+                            <property name="text">
+                             <string>Create File</string>
+                            </property>
+                           </widget>
+                          </item>
+                          <item>
+                           <widget class="QPushButton" name="btn_filedir">
+                            <property name="sizePolicy">
+                             <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+                              <horstretch>0</horstretch>
+                              <verstretch>0</verstretch>
+                             </sizepolicy>
+                            </property>
+                            <property name="styleSheet">
+                             <string notr="true">QPushButton{
+background-color: rgb(25, 116, 210);
+color: rgb(255, 255, 255);
+font: 57 14pt &quot;Roboto Medium&quot;;
+border-radius:20px;}
+QPushButton:hover{
+background-color: rgb(30, 143, 255);
+}
+QPushButton:pressed{
+background-color: rgb(0, 170, 255);
+}</string>
+                            </property>
+                            <property name="text">
+                             <string>Select File Directory</string>
+                            </property>
+                           </widget>
+                          </item>
+                          <item>
+                           <widget class="QPushButton" name="btn_delete">
+                            <property name="sizePolicy">
+                             <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+                              <horstretch>0</horstretch>
+                              <verstretch>0</verstretch>
+                             </sizepolicy>
+                            </property>
+                            <property name="styleSheet">
+                             <string notr="true">QPushButton{
+background-color: rgb(25, 116, 210);
+color: rgb(255, 255, 255);
+font: 57 18pt &quot;Roboto Medium&quot;;
+border-radius:20px;}
+QPushButton:hover{
+background-color: rgb(30, 143, 255);
+}
+QPushButton:pressed{
+background-color: rgb(0, 170, 255);
+}</string>
+                            </property>
+                            <property name="text">
+                             <string>Delete</string>
+                            </property>
+                           </widget>
+                          </item>
+                          <item>
+                           <widget class="QPushButton" name="btn_refresh">
+                            <property name="sizePolicy">
+                             <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+                              <horstretch>0</horstretch>
+                              <verstretch>0</verstretch>
+                             </sizepolicy>
+                            </property>
+                            <property name="styleSheet">
+                             <string notr="true">QPushButton{
+background-color: rgb(25, 116, 210);
+color: rgb(255, 255, 255);
+font: 57 18pt &quot;Roboto Medium&quot;;
+border-radius:20px;}
+QPushButton:hover{
+background-color: rgb(30, 143, 255);
+}
+QPushButton:pressed{
+background-color: rgb(0, 170, 255);
+}</string>
+                            </property>
+                            <property name="text">
+                             <string>Refresh</string>
+                            </property>
+                           </widget>
+                          </item>
+                         </layout>
+                        </widget>
+                       </item>
+                       <item>
+                        <widget class="QFrame" name="frame_9">
+                         <property name="styleSheet">
+                          <string notr="true">#frame_9{border: 2px solid white;}</string>
+                         </property>
+                         <property name="frameShape">
+                          <enum>QFrame::StyledPanel</enum>
+                         </property>
+                         <property name="frameShadow">
+                          <enum>QFrame::Raised</enum>
+                         </property>
+                         <layout class="QFormLayout" name="formLayout_2">
+                          <property name="horizontalSpacing">
+                           <number>0</number>
+                          </property>
+                          <property name="verticalSpacing">
+                           <number>10</number>
+                          </property>
+                          <property name="leftMargin">
+                           <number>9</number>
+                          </property>
+                          <property name="topMargin">
+                           <number>9</number>
+                          </property>
+                          <property name="rightMargin">
+                           <number>9</number>
+                          </property>
+                          <property name="bottomMargin">
+                           <number>9</number>
+                          </property>
+                          <item row="0" column="0" colspan="2">
+                           <widget class="QLabel" name="label_4">
+                            <property name="styleSheet">
+                             <string notr="true">background-color: transparent;
+color: rgb(255, 255, 255);
+font: 57 14pt &quot;Roboto Medium&quot;;
+</string>
+                            </property>
+                            <property name="text">
+                             <string>Requirements Edit</string>
+                            </property>
+                           </widget>
+                          </item>
+                          <item row="1" column="1">
+                           <widget class="QLabel" name="label_5">
+                            <property name="styleSheet">
+                             <string notr="true">background-color: transparent;
+color: rgb(255, 255, 255);
+font: 57 14pt &quot;Roboto Medium&quot;;</string>
+                            </property>
+                            <property name="text">
+                             <string>Reference #:</string>
+                            </property>
+                           </widget>
+                          </item>
+                          <item row="2" column="1">
+                           <widget class="QLineEdit" name="line_ref">
+                            <property name="styleSheet">
+                             <string notr="true">	color: rgb(255, 255, 255);
+	font: 14pt &quot;Helvetica Neue&quot;;
+	background-color: #1974D2;
+border: none;</string>
+                            </property>
+                            <property name="placeholderText">
+                             <string>Enter Ref. #</string>
+                            </property>
+                           </widget>
+                          </item>
+                          <item row="3" column="1">
+                           <widget class="QLabel" name="label_6">
+                            <property name="styleSheet">
+                             <string notr="true">background-color: transparent;
+color: rgb(255, 255, 255);
+font: 57 14pt &quot;Roboto Medium&quot;;</string>
+                            </property>
+                            <property name="text">
+                             <string>Req. Status:</string>
+                            </property>
+                           </widget>
+                          </item>
+                          <item row="4" column="1">
+                           <widget class="QLineEdit" name="line_req">
+                            <property name="styleSheet">
+                             <string notr="true">	color: rgb(255, 255, 255);
+	font: 14pt &quot;Helvetica Neue&quot;;
+	background-color: #1974D2;
+border: none;</string>
+                            </property>
+                            <property name="placeholderText">
+                             <string>Fully Paid, etc.</string>
+                            </property>
+                           </widget>
+                          </item>
+                          <item row="5" column="0" colspan="2">
+                           <widget class="QPushButton" name="btn_editreq">
+                            <property name="styleSheet">
+                             <string notr="true">QPushButton{
+border: none;
+background-color: rgb(25, 116, 210);
+color: rgb(255, 255, 255);
+font: 57 12pt &quot;Roboto Medium&quot;;}
+QPushButton:hover{
+background-color: rgb(30, 143, 255);
+}
+QPushButton:pressed{
+background-color: rgb(0, 170, 255);
+}</string>
+                            </property>
+                            <property name="text">
+                             <string>Edit Requirements</string>
+                            </property>
+                           </widget>
+                          </item>
+                         </layout>
+                        </widget>
+                       </item>
+                      </layout>
+                     </widget>
+                    </item>
+                   </layout>
+                  </widget>
+                 </item>
+                </layout>
+               </widget>
+              </widget>
+             </item>
+            </layout>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
